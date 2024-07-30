@@ -27,7 +27,12 @@ function addTask() {
         liTag.appendChild(spanText);
         liTag.appendChild(spanClose);
         todoUl.appendChild(liTag);
-        todoText.value = " ";
-
+        todoText.value = " ";   
     }
+    
 }
+todoText.addEventListener('keypress', (event) => {
+    if (event.key === 'Enter') {
+        addTask();
+    }
+});

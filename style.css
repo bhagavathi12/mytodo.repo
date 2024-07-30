@@ -49,9 +49,11 @@ body{
 }
 .list-section ul li .done{
     text-decoration: line-through;
+}
 .list-section ul li .close{
     background-color: rgba(190, 190, 166, 0);
     padding:10px;
     color: white;
+    cursor: pointer;
 
 }
